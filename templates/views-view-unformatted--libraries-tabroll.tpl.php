@@ -4,7 +4,7 @@
 // We need jQuery UI tabs for this.
 
 drupal_add_library('system', 'ui.tabs');
-
+if (count($view->result) > 0) {
 ?>
  <div id="featured">
   <ul class="ui-tabs-nav">
@@ -26,4 +26,4 @@ drupal_add_library('system', 'ui.tabs');
   <?php endforeach; ?>
 
 </div>
-
+<?php } ?>
