@@ -36,10 +36,13 @@
 }
 
 #featured .ui-tabs-nav li.ui-tabs-selected {
-    border-bottom-color: #FFFFFF;
-    background: url("../images/tab-active.png") no-repeat scroll left top transparent;
-    margin-left: -12px;
-    padding-left: 12px;
+    position: relative;
+}
+#featured .ui-tabs-nav li.ui-tabs-selected:after {
+    right: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none;
+}
+#featured .ui-tabs-nav li.ui-tabs-selected:after {
+    border-color: rgba(153, 215, 219, 0); border-right-color: inherit; border-width: 24px; top: 50%; margin-top: -24px;
 }
 
 #featured li.ui-tabs-nav-item a {
@@ -56,8 +59,7 @@
     min-width: 90%;
 }
 
-#featured ul.ui-tabs-nav li.ui-tabs-selected a {
-    background: none repeat scroll 0 0 #99D7DB;
+#featured ul.ui-tabs-nav li.ui-tabs-selected a {    
     color: #fff;
     height: 43px;
     overflow: hidden;
