@@ -73,7 +73,7 @@
 		left:0;
     width: 70%
 }
-#featured a img {
+#featured img {
   width: 100%
 }
 #featured .ui-tabs-panel .info {
@@ -88,6 +88,11 @@
 
 #featured .ui-tabs-panel .info h3 {
     margin: 10px 10px 0 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 #featured .ui-tabs-panel .info h3 a {
