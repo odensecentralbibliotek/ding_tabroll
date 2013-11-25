@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * tabroll.features.inc
+ * ding_tabroll.features.inc
  */
 
 /**
@@ -18,7 +18,7 @@ function ding_tabroll_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function ding_tabroll_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -41,10 +41,10 @@ function ding_tabroll_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '460',
-          'height' => '240',
+          'width' => 460,
+          'height' => 240,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -62,7 +62,6 @@ function ding_tabroll_node_info() {
       'base' => 'node_content',
       'description' => t('ding_tabroll'),
       'has_title' => '1',
-      'custom' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
