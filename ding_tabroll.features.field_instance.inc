@@ -47,7 +47,7 @@ function ding_tabroll_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ding_tabroll_image',
-    'label' => 'image',
+    'label' => 'Image',
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
@@ -124,7 +124,7 @@ function ding_tabroll_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ding_tabroll_lead',
-    'label' => 'lead',
+    'label' => 'Lead',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -146,7 +146,7 @@ function ding_tabroll_field_default_field_instances() {
     'bundle' => 'ding_tabroll',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Insert this into the chosen library nodequeue.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -172,7 +172,7 @@ function ding_tabroll_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ding_tabroll_library_ref',
-    'label' => 'library',
+    'label' => 'Library',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -191,7 +191,7 @@ function ding_tabroll_field_default_field_instances() {
     'bundle' => 'ding_tabroll',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Write part of the node title to search for content to link to.',
     'display' => array(
       'content_glider' => array(
         'label' => 'above',
@@ -223,7 +223,7 @@ function ding_tabroll_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ding_tabroll_link',
-    'label' => 'link',
+    'label' => 'Link',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -243,10 +243,12 @@ function ding_tabroll_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('image');
-  t('lead');
-  t('library');
-  t('link');
+  t('Image');
+  t('Insert this into the chosen library nodequeue.');
+  t('Lead');
+  t('Library');
+  t('Link');
+  t('Write part of the node title to search for content to link to.');
 
   return $field_instances;
 }

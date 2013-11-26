@@ -62,13 +62,10 @@ function ding_tabroll_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node_ding_tabroll';
+  $strongarm->name = 'field_bundle_settings_node__ding_tabroll';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'content_glider' => array(
         'custom_settings' => TRUE,
       ),
       'teaser_highlight' => array(
@@ -93,19 +90,19 @@ function ding_tabroll_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
-        ),
-        'redirect' => array(
-          'weight' => '30',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
+        ),
+        'redirect' => array(
+          'weight' => '1',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node_ding_tabroll'] = $strongarm;
+  $export['field_bundle_settings_node__ding_tabroll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
