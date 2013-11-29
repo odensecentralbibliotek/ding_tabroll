@@ -15,7 +15,7 @@ function ding_tabroll_create_nodequeues() {
   $nodequeue = new stdClass();
   $nodequeue->name = 'ding_tabroll';
   $nodequeue->title = 'frontpage tabroll';
-  $nodequeue->subqueue_title = '';
+  $nodequeue->subqueue_title = 'Frontpage';
   $nodequeue->subqueues = '1';
   $nodequeue->owner = 'nodequeue';
   $nodequeue->add_subqueue = array(
@@ -28,7 +28,7 @@ function ding_tabroll_create_nodequeues() {
   $nodequeue->title = 'libraries';
   $nodequeue->owner = 'smartqueue_nodetypes';
   $nodequeue->reference = 'ding_library';
-  $nodequeue->subqueue_title = 'biblioteker';
+  $nodequeue->subqueue_title = '%subqueue';
   $export['ding_tabroll_for_libraries'] = $nodequeue;
 
   foreach ($export as $name => $nodequeue) {
