@@ -24,7 +24,7 @@ if (empty($link) && isset($fields['field_ding_tabroll_external'])) {
   if (empty($link)) {
     print $fields['title']->content;
   } else {
-    print l($fields['title']->content, $link);
+    print l($fields['title']->content, $link, array('html' => TRUE));
   }
   ?></h3>
   <p><?php print $fields['field_ding_tabroll_lead']->content; ?></p>
