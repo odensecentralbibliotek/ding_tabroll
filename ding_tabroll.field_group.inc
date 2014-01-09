@@ -13,8 +13,8 @@ function ding_tabroll_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_internal_link|node|ding_tabroll|form';
-  $field_group->group_name = 'group_internal_link';
+  $field_group->identifier = 'group_ding_tabroll_internal|node|ding_tabroll|form';
+  $field_group->group_name = 'group_ding_tabroll_internal';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'ding_tabroll';
   $field_group->mode = 'form';
@@ -24,8 +24,7 @@ function ding_tabroll_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'field_ding_tabroll_link',
-      1 => 'field_anchor',
-      2 => 'field_ding_tabroll_anchor',
+      1 => 'field_ding_tabroll_anchor',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -35,10 +34,10 @@ function ding_tabroll_field_group_info() {
         'classes' => '',
         'description' => 'Linking to an unpublished node will hide this until the node is published.',
       ),
-      'formatter' => 'open',
+      'formatter' => 'collapsible',
     ),
   );
-  $export['group_internal_link|node|ding_tabroll|form'] = $field_group;
+  $export['group_ding_tabroll_internal|node|ding_tabroll|form'] = $field_group;
 
   return $export;
 }

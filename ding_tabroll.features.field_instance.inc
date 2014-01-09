@@ -111,7 +111,7 @@ function ding_tabroll_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -175,8 +175,8 @@ function ding_tabroll_field_default_field_instances() {
         ),
         'allowed_types' => array(
           'audio' => 0,
-          0 => 0,
           'default' => 0,
+          0 => 0,
           'image' => 'image',
           'video' => 0,
         ),
@@ -287,7 +287,7 @@ function ding_tabroll_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
