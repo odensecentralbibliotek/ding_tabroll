@@ -217,6 +217,19 @@ function ding_tabroll_views_default_views() {
   $handler->display->display_options['fields']['field_ding_tabroll_link']['settings'] = array(
     'link' => 0,
   );
+  /* Field: Content: Anchor */
+  $handler->display->display_options['fields']['field_ding_tabroll_anchor']['id'] = 'field_ding_tabroll_anchor';
+  $handler->display->display_options['fields']['field_ding_tabroll_anchor']['table'] = 'field_data_field_ding_tabroll_anchor';
+  $handler->display->display_options['fields']['field_ding_tabroll_anchor']['field'] = 'field_ding_tabroll_anchor';
+  $handler->display->display_options['fields']['field_ding_tabroll_anchor']['label'] = '';
+  $handler->display->display_options['fields']['field_ding_tabroll_anchor']['element_label_colon'] = FALSE;
+  /* Field: Content: External */
+  $handler->display->display_options['fields']['field_ding_tabroll_external']['id'] = 'field_ding_tabroll_external';
+  $handler->display->display_options['fields']['field_ding_tabroll_external']['table'] = 'field_data_field_ding_tabroll_external';
+  $handler->display->display_options['fields']['field_ding_tabroll_external']['field'] = 'field_ding_tabroll_external';
+  $handler->display->display_options['fields']['field_ding_tabroll_external']['label'] = '';
+  $handler->display->display_options['fields']['field_ding_tabroll_external']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ding_tabroll_external']['click_sort_column'] = 'url';
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
