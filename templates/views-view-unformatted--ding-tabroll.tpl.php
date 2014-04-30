@@ -21,7 +21,7 @@ drupal_add_library('system', 'ui.tabs');
 
   <?php foreach ($rows as $id => $row): ?>
     <div id="fragment-<?php print $id ?>" class="ui-tabs-panel <?php if($id >= "1"){print "ui-tabs-hide"; }  ?>">
-      <?php print $row; ?>
+      <?php print decode_entities($row); ?>
     </div>
   <?php endforeach; ?>
 
