@@ -1,5 +1,5 @@
 <?php
-if ($row->_field_data['nid']['entity']->field_ding_tabroll_external['und'][0]['attributes']['target'] === '_blank'){
+if (isset($row->_field_data['nid']['entity']->field_ding_tabroll_external['und'][0]['attributes']['target']) && ($row->_field_data['nid']['entity']->field_ding_tabroll_external['und'][0]['attributes']['target'] === '_blank')){
        $target = array();
        $target['attributes']['target'] = '_blank';
 }
