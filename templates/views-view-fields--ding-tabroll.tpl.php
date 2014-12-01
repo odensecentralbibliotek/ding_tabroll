@@ -3,8 +3,9 @@ if (isset($row->_field_data['nid']['entity']->field_ding_tabroll_external['und']
        $target = array();
        $target['attributes']['target'] = '_blank';
 }
-if (!empty($fields['field_ding_tabroll_link']->raw)) {
-  $link = 'node/' . $fields['field_ding_tabroll_link']->raw;
+//if (!empty($fields['field_ding_tabroll_link']->raw)) {
+if(isset($row->_field_data['nid']['entity']->field_ding_tabroll_link['und'][0]["target_id"])){
+  $link = 'node/' . $row->_field_data['nid']['entity']->field_ding_tabroll_link['und'][0]["target_id"];
   if (!empty($fields['field_ding_tabroll_anchor']->content)) {
     $link .= '#' . $fields['field_ding_tabroll_anchor']->content;
   }
@@ -35,5 +36,5 @@ if (empty($link) && isset($fields['field_ding_tabroll_external'])) {
       print l($fields['title']->content, $link, array('html' => TRUE)); 
   }
   ?></h3>
-  <p><?php print $fields['field_ding_tabroll_lead']->content; ?></p>
+  <p><?php print isset($fields['field_ding_tabroll_lead']->content) ? $fields['field_ding_tabroll_lead']->content : ""; ?></p>
 </div>
