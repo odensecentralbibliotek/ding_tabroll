@@ -47,13 +47,13 @@
   border-bottom-right-radius: 4px !important;
 }
 
-#featured .ui-tabs-nav li.ui-tabs-selected {
+#featured .ui-tabs-nav li.ui-tabs-active {
     position: relative;
 }
-#featured .ui-tabs-nav li.ui-tabs-selected:after {
+#featured .ui-tabs-nav li.ui-tabs-active:after {
     right: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none;
 }
-#featured .ui-tabs-nav li.ui-tabs-selected:after {
+#featured .ui-tabs-nav li.ui-tabs-active:after {
     border-color: rgba(153, 215, 219, 0); border-right-color: inherit; border-width: 24px; top: 50%; margin-top: -24px;
 }
 
@@ -72,7 +72,7 @@
     float: none;
 }
 
-#featured ul.ui-tabs-nav li.ui-tabs-selected a {    
+#featured ul.ui-tabs-nav li.ui-tabs-active a {    
     color: #fff;
     height: 43px;
     overflow: hidden;
