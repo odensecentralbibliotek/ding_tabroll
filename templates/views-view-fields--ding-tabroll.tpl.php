@@ -37,4 +37,10 @@ if (empty($link) && isset($fields['field_ding_tabroll_external'])) {
   }
   ?></h3>
   <p><?php print isset($fields['field_ding_tabroll_lead']->content) ? $fields['field_ding_tabroll_lead']->content : ""; ?></p>
+  <?php 
+  if(isset($row->field_field_ding_tabroll_image[0]['raw']['field_kilde']['und'][0]['value']))
+  {
+      echo "<span class='tabroll-photo-copyright'> " . t('Photo: ') . "{$row->field_field_ding_tabroll_image[0]['raw']['field_kilde']['und'][0]['value']} </span>";
+  }
+  ?>
 </div>

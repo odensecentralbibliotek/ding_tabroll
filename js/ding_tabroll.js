@@ -1,5 +1,4 @@
 (function ($) {
-
 $(document).ready(function($) {
   // Check if the tabs lib is loaded before trying to call it.
   if ($.fn.tabs) {
