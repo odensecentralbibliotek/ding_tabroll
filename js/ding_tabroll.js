@@ -12,6 +12,8 @@ $(document).ready(function($) {
  * Add the jquery.rotate function back.
  */
 (function($){
+    try
+    {
 	$.extend( $.ui.tabs.prototype, {
 		rotation: null,
 		rotationDelay: null,
@@ -86,4 +88,9 @@ $(document).ready(function($) {
 			self.rotate(1, self.continuing);
 		}
 	});
+    }
+    catch(e)
+    {
+        
+    }
 })(jQuery);
