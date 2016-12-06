@@ -36,7 +36,19 @@ if (empty($link) && isset($fields['field_ding_tabroll_external'])) {
       print l($fields['title']->content, $link, array('html' => TRUE)); 
   }
   ?></h3>
-  <p><?php print isset($fields['field_ding_tabroll_lead']->content) ? $fields['field_ding_tabroll_lead']->content : ""; ?></p>
+  <p>
+      <?php
+      if (empty($link)) {
+        print isset($fields['field_ding_tabroll_lead']->content) ? $fields['field_ding_tabroll_lead']->content : "";
+      }
+      elseif (isset($target)) {
+        print l($fields['field_ding_tabroll_lead']->content, $link, $target, array('html' => TRUE));
+      }
+      else {
+        print l($fields['field_ding_tabroll_lead']->content, $link, array('html' => TRUE));
+      }
+      ?>
+  </p>
   <?php 
   if(isset($row->field_field_ding_tabroll_image[0]['raw']['field_kilde']['und'][0]['value']))
   {

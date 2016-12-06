@@ -122,6 +122,11 @@
     width: 90%;
 }
 
+#featured .ui-tabs-panel .info p a {
+    color: white;
+    text-decoration: none;
+}
+
 #featured .ui-tabs-hide {
     display: none;
 }
